@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAnvas</title></head>
+        <body>
+            <canvas id="canvas" height="200"width="300"
+            style="border:5px solid green";>
+        </canvas>
+        <script>
+            var c= document.getElementById("canvas");
+            var ctx=c.getContext("2d")
+            ctx.beginPath( );
+            ctx.moveTo(20,20);
+            ctx.bezierCurveTo(20,90,90,90,90,20)
+            ctx.stroke( );
+            </script>
+             </body>
+             </html>
