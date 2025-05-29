@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+
+.navbar {
+  background: #7cd912;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.hero {
+  background: url('J.JPG') no-repeat center center/cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.buttons .btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;;
+  font-weight:italic;
+  border-radius: 5px;
+}
+
+.btn.green {
+  background-color: #178f07;
+  color: white;
+}
+
+.btn.white {
+  background-color: rgb(181, 224, 116);
+  color: white;
+}
+
+
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.service-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.service-box img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-box .text {
+  max-width: 400px;
+  text-align: left;
+}
+
+.highlight {
+  color: #5a9e2d;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+.ad-section {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.ad-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.ad-image {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ad-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.ad-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.ad-text .green {
+  color: #5a9e2d;
+  font-weight: bold;
+}
+ .footer {
+            background-color: #1e293b; 
+            color: #d1d5db; /
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            margin-bottom: 20px;
+        }
+
+        .footer-col h3 {
+            color: #e5e7eb; 
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .footer-col p,
+        .footer-col ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a {
+            color: #9ca3af; 
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            border-top: 1px solid #374151; 
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .service-link::before,
+        .follow-link::before {
+            content: ">";
+            margin-right: 8px;
+            color: #9ca3af;
+        }
+
+        .follow-link a {
+            color: #60a5fa; 
+        }
+
+        
+        .follow-link a[href*="facebook.com"] {
+            color: #3b5998;
+        }
+
+        .follow-link a[href*="twitter.com"] {
+            color: #1da1f2;
+        }
+
+        .follow-link a[href*="linkedin.com"] {
+            color: #0e76a8;
+        }
+
+        .follow-link a[href*="youtube.com"] {
+            color: #ff0000;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-col {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        

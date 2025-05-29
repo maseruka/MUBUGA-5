@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIRA Clinic - Quality Healthcare in Nyagatare</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: hsl(82, 89%, 68%);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .hero {
+            background-image:url(J.JPG );
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero button {
+    background-color: #a6e56f; 
+    border: none;
+    color:white;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 1rem;
+}
+
+.hero button:hover {
+    background-color: #0e8212; 
+    transform: translateY(-3px);
+}
+
+.hero button:focus {
+    outline: none; 
+    box-shadow: rgb(152, 212, 61),
+}
+
+        .services {
+            padding: 3rem;
+            text-align: center;
+        }
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .card {
+            width: 30%;
+            min-width: 300px;
+            box-shadow: 0 4px 8px green;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+       .footer {
+            background-color: #1e293b; 
+            color: #d1d5db; /
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            margin-bottom: 20px;
+        }
+
+        .footer-col h3 {
+            color: #e5e7eb; 
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .footer-col p,
+        .footer-col ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a {
+            color: #9ca3af; 
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            border-top: 1px solid #374151; 
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .service-link::before,
+        .follow-link::before {
+            content: ">";
+            margin-right: 8px;
+            color: #9ca3af;
+        }
+
+        .follow-link a {
+            color: #60a5fa; 
+        }
+
+        
+        .follow-link a[href*="facebook.com"] {
+            color: #3b5998;
+        }
+
+        .follow-link a[href*="twitter.com"] {
+            color: #1da1f2;
+        }
+
+        .follow-link a[href*="linkedin.com"] {
+            color: #0e76a8;
+        }
+
+        .follow-link a[href*="youtube.com"] {
+            color: #ff0000;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-col {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        
+        
+        .clinic-info {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .clinic-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .services, .social {
+            flex: 1;
+            min-width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        li:before {
+            content: ">";
+            position: absolute;
+            left: 0;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="k.jpg">KIRA Clinic</div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#partnership">partnership</a>
+             <a href="#our Doctor">our Doctor</a>
+            <a href="#Contact Us">Contact Us</a>
+            
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>welcome to kira clinic</h1>
+        <p>we are clinic offer consulitation and treat various sickness</p>
+        <button>Get started</button><br> <button>Contact Us</button>
+    </section>>
+    <section class="section bg-white py-10">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-green-600 mb-8">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="service-card flex flex-col md:flex-row items-center bg-gray-50 rounded-lg shadow-md overflow-hidden">
+        <div class="image-container md:w-1/2 relative">
+          <img src="https://placehold.co/400x300/EEE/31343C" alt="Treatment for illness" class="w-full h-auto object-cover">
+          <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+            <h3 class="text-xl font-semibold text-white">Treatment for illness</h3>
+          </div>
+        </div>
+        <div class="content-container p-6 md:w-1/2">
+          <p class="text-gray-700">We provide care for common illnesses.  It's important to get checked out if you're not feeling well.</p>
+        </div>
+      </div>
+      <div class="service-card flex flex-col md:flex-row items-center bg-gray-50 rounded-lg shadow-md overflow-hidden">
+        <div class="image-container md:w-1/2 relative">
+          <img src="https://placehold.co/400x300/EEE/31343C" alt="Basic laboratory" class="w-full h-auto object-cover">
+           <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+            <h3 class="text-xl font-semibold text-white">Basic laboratory</h3>
+          </div>
+        </div>
+        <div class="content-container p-6 md:w-1/2">
+          <p class="text-gray-700">We offer basic lab tests to help with diagnoses.  These tests help doctors understand what's going on in your body.</p>
+        </div>
+      </div>
+      <div class="service-card flex flex-col md:flex-row items-center bg-gray-50 rounded-lg shadow-md overflow-hidden">
+        <div class="image-container md:w-1/2 relative">
+          <img src="https://placehold.co/400x300/EEE/31343C" alt="Vaccination" class="w-full h-auto object-cover">
+          <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+            <h3 class="text-xl font-semibold text-white">Vaccination</h3>
+          </div>
+        </div>
+        <div class="content-container p-6 md:w-1/2">
+          <p class="text-gray-700">We offer vaccinations to help protect against diseases.  Vaccines are a safe and effective way to stay healthy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        
+    </section> <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>KIRA CLINIC</h3>
+                <p>Rwanda, Nyagatare District</p>
+                <p>Street KV 20 ST</p>
+                <p>Phone: +250 787 888 888</p>
+                <p>Email: info@kiraclinic.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <a href="#" class="service-link">Consultation</a><br>
+                    <a href="#" class="service-link">Hospital</a><br>
+                    <a href="#" class="service-link">Dentist</a><br>
+                    <a href="#" class="service-link">Consultation</a><br>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <ul>
+                    <a href="https://facebook.com" class="follow-link">Facebook</a><br>
+                    <a href="https://twitter.com" class="follow-link">Twitter</a><br>
+                    <a href="https://linkedin.com" class="follow-link">LinkedIn</a><br>
+                    <a href="https://www.youtube.com/" class="follow-link">YouTube</a><br>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2022 Copyright, Kira Clinic Ltd.
+        </div>
+    </footer>
+</body>
+</html>
+
+
+   
+</body>
+</html>
